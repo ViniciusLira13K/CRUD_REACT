@@ -5,3 +5,5 @@ backend em node
  - dependencias
     nodemon
     cors
+    prisma mais a config e migrations
+    prisma client
