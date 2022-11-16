@@ -19,8 +19,14 @@ todosRoutes.post('/todos', async (req, res) => {
 
 //R
 todosRoutes.get('/todos', async (req, res) => {
-    const todos = await prisma.todo.findMany();
-    return res.status(200).json(todos);
+    try {
+        const todos = await prisma.todo.findMany();
+        console.log(' ok = ', todos)
+        return res.status(200).json(todos);
+        
+    } catch (error) {
+        console.log(' erro = ', error)
+    }
 });
 //U
 todosRoutes.put('/todos', async (req, res) => {

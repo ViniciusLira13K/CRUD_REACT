@@ -2,8 +2,14 @@
 Crud desenvolvido com as tecnologias: React.js, Node.js, Postgress e Docker
 
 backend em node
- - dependencias
+   npm init
+   - dependencias (npm)
     nodemon
     cors
     prisma mais a config e migrations
     prisma client
+frontend em react
+   npx create-react-app frontend
+   - dependencias (npm)
+      axios
+      react-icons --save
