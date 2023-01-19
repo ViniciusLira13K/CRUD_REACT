@@ -13,3 +13,9 @@ frontend em react
    - dependencias (npm)
       axios
       react-icons --save
+
+deploy no docker 
+   react
+      npm run build || yarn build
+      deploy gratuito = netlify | vercel
+      
