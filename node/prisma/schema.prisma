@@ -33,3 +33,11 @@ model User{
   type Int @default(0)
   active Boolean @default(true)
 }
+
+model Sale{
+  id Int @id @default(autoincrement())
+  productList String[]
+  paymentList String[]
+  value Float
+  dateRegister DateTime @default(now())
+}
