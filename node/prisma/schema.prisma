@@ -26,3 +26,10 @@ model Product{
   dateTimeInsert DateTime @default(now())
   dateTimeUpdate DateTime @default(now())
 }
+
+model User{
+  id Int @id @default(autoincrement())
+  name String
+  type Int @default(0)
+  active Boolean @default(true)
+}

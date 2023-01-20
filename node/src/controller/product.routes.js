@@ -7,7 +7,7 @@ const prisma = new PrismaClient();
 //C
 productRoutes.post('/product', async (req, res) => {
     const { name, code, price, quantityCurrent, quantityMinimum } = req.body;
-    const todo = await prisma.product.create({
+    const product = await prisma.product.create({
         data: {
             name,
             code,
@@ -16,7 +16,7 @@ productRoutes.post('/product', async (req, res) => {
             quantityMinimum,
         },
     });
-    return res.status(201).json(todo);
+    return res.status(201).json(product);
 });
 
 //R
