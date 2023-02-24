@@ -4,7 +4,6 @@ services:
   database:
     image: postgres
     container_name: tutorial
-    restart: tutorial
     restart: always
     ports:
       - 5432:5432

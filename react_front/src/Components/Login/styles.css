@@ -1,0 +1,9 @@
+.subCotainer {
+  width: 5.1rem;
+  height: 5.1rem;
+  border-radius: 50%;
+
+  border: 2px solid #64697b;
+  box-shadow: none;
+  margin: 10px;
+}
